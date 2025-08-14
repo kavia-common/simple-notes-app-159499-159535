@@ -1,15 +1,23 @@
 /**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles for the ultralight Qwik template.
- * Uses a minimalistic light theme with specified color scheme.
+ * Global styles and theme.
+ * Minimalistic light theme using the provided palette.
+ * primary: #1976d2, secondary: #ffffff, accent: #ffab00
  */
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #333333;
-  --accent-color: #0078d4;
-  --background-color: #ffffff;
+  --color-primary: #1976d2;
+  --color-secondary: #ffffff;
+  --color-accent: #ffab00;
+
+  --text-color: #111827; /* gray-900 */
+  --muted-text: #6b7280; /* gray-500 */
+  --border-color: #e5e7eb; /* gray-200 */
+  --bg: #ffffff;
+  --bg-subtle: #f9fafb; /* gray-50 */
+
+  --radius: 10px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 html {
@@ -31,11 +39,21 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: var(--primary-color);
+  background-color: var(--bg);
+  color: var(--text-color);
   line-height: inherit;
 }
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  font: inherit;
+  color: inherit;
 }
